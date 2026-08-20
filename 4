@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+class Overloading
+{
+public:
+	int Multiplacation1, multiplies 2;
+	void Multi(int a, int b)
+	{
+		Multiplacation = a * b;
+	}
+	void Multi(int a, int b, int c)
+	{
+		Multiplacation2 = a * b * c;
+	}
+	Overloading()
+	{
+		cout << "1st Multi: " << Multiplacation1 << endl;
+		cout << "2nd Multi: " << Multiplacation2;
+	}
+};
+int main()
+{
+	Overloading obj;
+	obj.Multi(4, 5);
+	obj.Multi(4, 5, 6);
+	// obj.display();
+	return 0;
+}
