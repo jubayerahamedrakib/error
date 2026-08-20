@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+class student
+{
+    private:
+    int secretPassword=99;
+    
+    public:
+    friend void showPassword()
+    {
+        cout <<"Password is:" << secretPassword<< endl;
+    }
+};
+
+int main()
+{
+    student obj;
+    obj.showPassword();
+    return 0;
+}
